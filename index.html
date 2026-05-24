@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Bebe 💙</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOVE EFFECT -->
+  <div class="love" style="left:10%; animation-delay:0s;">💙</div>
+  <div class="love" style="left:25%; animation-delay:1s;">🤍</div>
+  <div class="love" style="left:50%; animation-delay:2s;">💙</div>
+  <div class="love" style="left:75%; animation-delay:3s;">🤍</div>
+  <div class="love" style="left:90%; animation-delay:1.5s;">💙</div>
+
+  <div class="container">
+
+    <!-- FIRST PAGE -->
+    <div class="card" id="page1">
+      <h1>Hello BEBE 💙</h1>
+      <p>this is for you</p>
+
+      <button class="btn" onclick="showPage2()">
+        Continue
+      </button>
+    </div>
+
+    <!-- SECOND PAGE -->
+    <div class="card hidden" id="page2">
+
+     
+      <img src="snopy.jpg" class="snoopy-corner bottom-left">
+      <img src="snopy.jpg" class="snoopy-corner bottom-right">
+
+      <p class="typing">
+     thank you for existing. I'm so glad that I met such a wonderful person like you.
+you make my days brighter and my heart happier in the best way possible. I may not be able to show you how much you mean to me and how committed I am to you, but every day I always try to find a way to show it to you.
+I hope you always remember how special and loved you are. I hope you're doing well rn. always take care.💙
+      </p>
+
+      <p class="flower-text">
+        here's a flower for you, bebe. 🌷
+      </p>
+
+      <button class="btn" onclick="showPage3()">
+        Continue
+      </button>
+    </div>
+
+    <!-- FINAL PAGE -->
+    <div class="card hidden" id="page3">
+
+      <img src="snop.jpg" class="final-snoopy">
+
+      <img src="tul.jpg" class="tulips">
+
+      <h1 class="final-message">
+        hope you like this :)
+      </h1>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function showPage2(){
+      document.getElementById("page1").classList.add("hidden");
+      document.getElementById("page2").classList.remove("hidden");
+    }
+
+    function showPage3(){
+      document.getElementById("page2").classList.add("hidden");
+      document.getElementById("page3").classList.remove("hidden");
+    }
+
+  </script>
+
+</body>
+</html>
